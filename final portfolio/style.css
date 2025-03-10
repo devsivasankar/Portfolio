@@ -1,0 +1,692 @@
+/* Import Outfit font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* kurale font */
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+/* caveat font */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    background-color: #242424;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.myname {
+    font-family: "Caveat", cursive;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 10px;
+    font-weight: bold;
+    background: linear-gradient(to right, #8a3edb, #2575fc); /* Left to right gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.work {
+    font-size: 1.2rem;
+    color: #dcdcc8;
+    font-weight: 500;
+}
+
+.location {
+    font-size: 1rem;
+    color: #dcdcc8;
+    margin-top: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.onlinelinks {
+    margin-top: 15px;
+}
+
+.onlinelinks i {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: #dcdcc8;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.onlinelinks i:hover {
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.3s ease;
+    transform: translateY(-5px);
+}
+
+.description {
+    font-size: 1rem;
+    color: #dcdcc8;
+    margin-top: 10px;
+}
+
+.resume {
+    all: unset;
+    color: #dcdcc8;
+    font-size: 12px;
+    padding: 6px;
+    background: rgba(255, 255, 255, 0.47);
+    border-radius: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.resume:hover {
+    background-color: #dcdcc8;
+    color: #000;
+}
+
+.resume i {
+    background-color: #dcdcc8;
+    padding: 10px;
+    border-radius: 50%;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.resume:hover i {
+    background-color: #000;
+    color: #dcdcc8;
+    transform: translateX(5px); /* Slide the icon to the right */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* About Section */
+.aboutheading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #dcdcc8;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.aboutheading i {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.aboutdescription {
+    font-size: 1rem;
+    color: #dcdcc8;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.agediv, .experiancediv, .educationdiv, .languagediv {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.47);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.agehead, .experiancehead, .educationhead, .languagehead {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #dcdcc8;
+}
+
+.age, .experiance, .education, .language {
+    font-size: 1rem;
+    color: #dcdcc8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Skills Section */
+.skillheaddiv {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.skillheading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #dcdcc8;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.skillheading i {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.skill-card {
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    width: 100px;
+    background: rgba(255, 255, 255, 0.47);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);   
+    -webkit-backdrop-filter: blur(7.3px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.skill-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    .myname {
+        font-size: 2rem;
+    }
+    .work {
+        font-size: 1rem;
+    }
+    .onlinelinks i {
+        font-size: 1.2rem;
+    }
+    .skills-grid {
+        justify-content: center;
+    }
+    .skill-card {
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    img {
+        width: 80px;
+        height: 80px;
+    }
+    .myname {
+        font-size: 2rem;
+    }
+    .work {
+        font-size: 0.9rem;
+    }
+    .onlinelinks i {
+        font-size: 1rem;
+        margin: 0 5px;
+    }
+    .aboutheading {
+        font-size: 1.5rem;
+    }
+    .aboutdescription {
+        font-size: 0.9rem;
+    }
+    .agehead, .experiancehead, .educationhead, .languagehead, .age, .experiance, .education, .language {
+        font-size: 0.9rem;
+    }
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        gap: 10px;
+        justify-items: center;
+    }
+    .skill-card {
+        width: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* project section */
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.col-8 {
+    width: 66.666%;
+}
+
+.projectheading {
+    font-size: 2rem;
+    color: #dcdcc8;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.projectheading i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+/* Whole Project Div */
+.wholediv {
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(255, 255, 255, 0.47);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.wholediv:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Name */
+.projectdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.projectdiv i {
+    font-size: 1.5rem;
+    color: #dcdcc8;
+    margin-right: 10px;
+}
+
+.projectname {
+    font-size: 1.25rem;
+    color: #dcdcc8;
+    font-weight: 600;
+}
+
+/* Project Description */
+.projectdescdiv {
+    margin-bottom: 15px;
+}
+
+.projectdesc {
+    font-size: 1rem;
+    color: #dcdcc8;
+    line-height: 1.6;
+}
+
+/* Project Link */
+.projectlinkdiv {
+    text-align: right;
+}
+
+.projectlink {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.projectlink:hover {
+    color: #0056b3;
+}
+
+.projectlink i {
+    margin-right: 5px;
+}
+
+/* More Button */
+.morebutton {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.morebutton a {
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    transition: color 0.3s ease;
+    background: rgba(255, 255, 255, 0.47);
+    border-radius: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.morebutton a:hover {
+    color: white;
+}
+
+.morebutton i {
+    margin-left: 5px;
+    background-color: #dcdcc8;
+    color: #000;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Tech Stack Section */
+.techstack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.prolang {
+    font-size: 0.9rem;
+    color: black;
+    background-color: #dcdcc8;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.prolang:hover {
+    background-color: rgba(0, 123, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .techstack {
+        gap: 8px;
+    }
+
+    .prolang {
+        font-size: 0.8rem;
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .techstack {
+        gap: 6px;
+    }
+
+    .prolang {
+        font-size: 0.75rem;
+        padding: 3px 6px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.col-8 {
+    width: 66.666%;
+}
+
+/* Contact Section */
+.contactdiv {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contactheading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #dcdcc8;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contactheading i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-icons i {
+    font-size: 2rem;
+    color: #dcdcc8;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-icons i:hover {
+    color: #3498db;
+    transform: translateY(-5px);
+}
+
+/* Specific Icon Colors on Hover */
+.fa-linkedin-in:hover {
+    color: #0077b5;
+}
+
+.fa-envelope:hover {
+    color: #d44638;
+}
+
+.fa-github:hover {
+    color: #333;
+}
+
+.fa-whatsapp:hover {
+    color: #25d366;
+}
+
+.fa-instagram:hover {
+    color: #e4405f;
+}
+
+.fa-phone-volume:hover {
+    color: #34b7f1;
+}
+
+.fa-x-twitter:hover {
+    color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .col-8 {
+        width: 100%;
+    }
+
+    .contact-icons i {
+        font-size: 1.5rem;
+    }
+
+    .contactheading {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Up Arrow Container */
+.uparrow {
+    position: fixed; /* Fixed position to stay on the screen */
+    bottom: 30px; /* Place at the bottom */
+    right: 30px; /* Place at the right */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    display: none; /* Hidden by default */
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.5s ease; /* Smooth fade-in effect */
+}
+
+/* Show the arrow only on devices below 800px */
+@media (max-width: 800px) {
+    .uparrow {
+        display: block; /* Show the arrow */
+    }
+}
+
+/* Arrow Styling */
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.47);
+    border-radius: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: glow 1.5s infinite; /* Continuous glow animation */
+}
+
+/* Glow Effect Animation */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 123, 255, 0.9);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+    }
+}
+
+/* Hover Effect */
+.arrow:hover {
+    background-color: rgba(0, 123, 255, 0.8); /* Blue background on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Icon Styling */
+.arrow i {
+    font-size: 1.2rem; /* Icon size */
+    color: #000; /* Icon color */
+}
